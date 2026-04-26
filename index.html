@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高端 Google 广告定制增长方案 | 2026 增长架构师</title>
+    <style>
+        :root {
+            --dark-bg: #05070a;
+            --card-bg: #0f1218;
+            --accent-gold: #c9a050;
+            --accent-blue: #007aff;
+            --text-main: #ffffff;
+            --text-dim: #a1a1a6;
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            background-color: var(--dark-bg); 
+            color: var(--text-main); 
+            font-family: "SF Pro Display", -apple-system, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* 导航栏 */
+        nav {
+            padding: 30px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            background: rgba(5, 7, 10, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 2px; color: var(--accent-gold); }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+            background: radial-gradient(circle at 50% 50%, #112244 0%, var(--dark-bg) 70%);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 30px;
+            background: linear-gradient(180deg, #fff 0%, #888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-dim);
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+
+        .btn-premium {
+            padding: 20px 45px;
+            background: var(--accent-gold);
+            color: #000;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 100px;
+            transition: 0.4s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .btn-premium:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(201, 160, 80, 0.4);
+        }
+
+        /* 核心服务展示 */
+        .section { padding: 120px 8%; }
+        .section-header { margin-bottom: 80px; text-align: left; }
+        .section-header h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .section-header p { color: var(--accent-gold); font-weight: 600; letter-spacing: 2px; }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            padding: 50px 40px;
+            border: 1px solid var(--glass);
+            border-radius: 24px;
+            transition: 0.3s;
+        }
+        .service-card:hover { background: #161b22; border-color: var(--accent-gold); }
+        .service-card h3 { font-size: 1.5rem; margin-bottom: 20px; color: var(--accent-gold); }
+        .service-card p { color: var(--text-dim); line-height: 1.8; }
+
+        /* 对比区域 */
+        .audit-process {
+            background: var(--card-bg);
+            border-radius: 40px;
+            padding: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .audit-step { flex: 1; padding: 0 30px; border-right: 1px solid var(--glass); }
+        .audit-step:last-child { border-right: none; }
+        .audit-number { font-size: 3rem; font-weight: 800; color: rgba(201, 160, 80, 0.2); }
+
+        /* 案例研究 */
+        .case-section { background: #fff; color: #000; }
+        .case-card { display: flex; align-items: center; gap: 50px; }
+        .case-stat { font-size: 4rem; font-weight: 900; color: var(--accent-blue); }
+
+        /* 底部 CTA */
+        .final-cta {
+            padding: 150px 8%;
+            text-align: center;
+            background: linear-gradient(to bottom, var(--dark-bg), #0a111a);
+        }
+
+        @media (max-width: 768px) {
+            .service-grid, .audit-process { grid-template-columns: 1fr; flex-direction: column; }
+            .audit-step { border-right: none; border-bottom: 1px solid var(--glass); padding: 40px 0; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">GROWTH ARCHITECT</div>
+    <a href="https://wa.me/86123456789" class="btn-premium" style="padding: 12px 25px; font-size: 0.8rem;">开始审计</a>
+</nav>
+
+<section class="hero">
+    <h1>重塑您的流量资产<br>2026 信号驱动型 Google 投放</h1>
+    <p>我们跳出关键词的局限，利用第一方数据信号与 AI 预测模型，为高增长企业构建不可逾越的竞争壁垒。</p>
+    <a href="#consult" class="btn-premium">预约 15 分钟免费增长会议</a>
+</section>
+
+<section class="section">
+    <div class="section-header">
+        <p>THE EXPERTISE</p>
+        <h2>不仅是投放，更是增长架构</h2>
+    </div>
+    <div class="service-grid">
+        <div class="service-card">
+            <h3>PMax 极客优化</h3>
+            <p>2026 年是素材驱动的时代。我们通过大规模视频实验与自动创意迭代，释放 Performance Max 的全域获客潜力。</p>
+        </div>
+        <div class="service-card">
+            <h3>第一方信号集成</h3>
+            <p>绕过 Cookie 限制。我们将您的 CRM 数据直接导入 Google 算法，让系统只寻找与您最优质客户重合的受众。</p>
+        </div>
+        <div class="service-card">
+            <h3>全链路转化追踪</h3>
+            <p>从点击到最终成交。通过服务端跟踪 (Server-side Tracking) 确保数据 100% 回传，彻底告别流量漏失。</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="audit-process">
+        <div class="audit-step">
+            <div class="audit-number">01</div>
+            <h3>账户深潜审计</h3>
+            <p>挖掘过去 12 个月中被浪费的预算与高转化信号空白点。</p>
+        </div>
+        <div class="audit-step">
+            <div class="audit-number">02</div>
+            <h3>增长蓝图构建</h3>
+            <p>基于 2026 年趋势，重新定义账户结构与受众信号优先级。</p>
+        </div>
+        <div class="audit-step">
+            <div class="audit-number">03</div>
+            <h3>规模化与自动化</h3>
+            <p>在保持 ROAS 稳定的前提下，利用智能出价实现业务规模化。 </p>
+        </div>
+    </div>
+</section>
+
+<section class="final-cta" id="consult">
+    <h2 style="font-size: 3rem; margin-bottom: 30px;">拒绝通用方案。<br>获取您的定制化增长路线图。</h2>
+    <p style="margin-bottom: 50px; color: var(--text-dim);">每日仅开放 2 个免费审计名额，仅限日预算 $500 以上的企业。</p>
+    <a href="https://wa.me/86123456789" class="btn-premium">与增长架构师对话</a>
+</section>
+
+<footer style="padding: 50px 8%; border-top: 1px solid var(--glass); text-align: center; color: var(--text-dim); font-size: 0.9rem;">
+    <p>© 2026 Growth Architect Agency. 定制化 Google Ads 代投服务。</p>
+    <div style="margin-top: 20px;">
+        SEO Keywords: Google Ads Management 2026 | Performance Max Expert | Signal-led Advertising
+    </div>
+</footer>
+
+</body>
+</html>
